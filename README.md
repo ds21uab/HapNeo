@@ -21,6 +21,33 @@ The mechanistic basis involves the S409F missense variant generating a proteasom
 - `scripts/` — R scripts for figure generation
 - `source_data/` — Source data files for manuscript figures
 
+## HOW TO RUN
+
+### Clone the repository
+git clone https://github.com/ds21uab/HapNeo.git
+cd HapNeo
+
+### Install R dependencies
+In R, run:
+install.packages(c("survival", "survminer", "ggplot2", "data.table", 
+                    "dplyr", "forestploter", "writexl", "ggpubr", 
+                    "glmnet", "pROC"))
+
+### Run the analysis
+All scripts are in the scripts/ directory and use pre-processed source 
+data from the source_data/ directory. Each script generates one or more 
+manuscript figures.
+
+To run a script:
+Rscript scripts/<script_name>.R
+
+Scripts can also be run interactively in RStudio by opening the .R file 
+and sourcing it.
+
+### Output
+Figures are saved to the working directory in PDF/PNG format. 
+Source data for each figure panel are provided in the source_data/ folder.
+
 ## CITATION
 
 *Manuscript under review*
