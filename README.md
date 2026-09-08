@@ -5,7 +5,7 @@ Germline haplotype predicts survival after immunotherapy in NSCLC via neoantigen
 ## REQUIREMENTS
 
 - R (≥ 4.0)
-- R packages: dplyr, survival, survminer, ggplot2, data.table, forestploter, writexl, ggpubr, pROC, future, future.apply
+- R packages: dplyr, survival, survminer, ggplot2, data.table, forestploter, writexl, ggpubr, pROC, future, future.apply, stringer, ggrepel, ggtext, ggVennDiagram, sf, patchwork, scales, readxl
 
 ## SUMMARY
 
