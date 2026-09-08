@@ -21,6 +21,11 @@ The mechanistic basis involves the S409F missense variant generating a proteasom
 - `scripts/` — R scripts for figure generation
 - `source_data/` — Source data files for manuscript figures
 
+## DATA AVAILABILITY
+- ORIEN and SU2C: Source data provided in source_data/
+- POPLAR: Available from EGA under accession EGAS00001002460 
+  (controlled access; requires data access application)
+
 ## HOW TO RUN
 
 ### Clone the repository
