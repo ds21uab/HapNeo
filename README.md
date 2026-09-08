@@ -22,9 +22,18 @@ The mechanistic basis involves the S409F missense variant generating a proteasom
 - `source_data/` — Source data files for manuscript figures
 
 ## DATA AVAILABILITY
-- ORIEN and SU2C: Source data provided in source_data/
-- POPLAR: Available from EGA under accession EGAS00001002460 
-  (controlled access; requires data access application)
+
+Individual-level genotype and clinical data are available through 
+controlled-access repositories:
+
+- ORIEN-Avatar: Available through the ORIEN network 
+  (https://www.oriencancer.org/) under a data use agreement with ORIEN
+- SU2C-MARK: Available through dbGaP (accession: phs002822.v1.p1)
+- POPLAR: Available from EGA (accession: EGAC00001001748)under a data access agreement with Genentech 
+
+Source data for all manuscript figures are provided in source_data/.
+Analysis scripts that require patient-level data include instructions 
+for expected input file formats at the top of each script.
 
 ## HOW TO RUN
 
