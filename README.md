@@ -46,6 +46,7 @@ In R, run:
 install.packages(c("survival", "survminer", "ggplot2", "data.table", 
                     "dplyr", "forestploter", "writexl", "ggpubr", 
                     "glmnet", "pROC"))
+R package installation takes approximately 5-10 minutes
 
 ### Run the analysis
 All scripts are in the scripts/ directory and use pre-processed source 
@@ -57,6 +58,8 @@ Rscript scripts/<script_name>.R
 
 Scripts can also be run interactively in RStudio by opening the .R file 
 and sourcing it.
+
+Figure generation scripts run in under 1 minute (demonstrated via Code Ocean capsule)
 
 ### Output
 Figures are saved to the working directory in PDF/PNG format. 
