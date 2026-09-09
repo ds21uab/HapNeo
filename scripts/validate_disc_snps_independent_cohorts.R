@@ -95,7 +95,8 @@ validate_cohort <- function(geno_file, clinical_file, selected_snps,
 
   # Standardize column names across cohorts
   if ("var_info" %in% colnames(geno))            setnames(geno, "var_info", "var_id")
-  if ("ANON_PATIENT_ID" %in% colnames(clinical)) setnames(clinical, "ANON_PATIENT_ID", "patient_id")
+ if ("ID" %in% colnames(geno))            setnames(geno, "ID", "var_id") 
+ if ("ANON_PATIENT_ID" %in% colnames(clinical)) setnames(clinical, "ANON_PATIENT_ID", "patient_id")
   if ("AGE" %in% colnames(clinical))             setnames(clinical, "AGE", "age")
   if ("GENDER" %in% colnames(clinical))          setnames(clinical, "GENDER", "sex")
   if ("OS_MONTHS" %in% colnames(clinical))       setnames(clinical, "OS_MONTHS", "OS_month")
@@ -203,8 +204,8 @@ assess_validation <- function(res_val, sig_snps, suffix) {
 ## ============================================================================
 
 res_holdout <- validate_cohort(
-  geno_file     = "source_data/geno_holdout.csv",
-  clinical_file = "source_data/clinical_holdout.csv",
+  geno_file     = "geno_holdout.csv",
+  clinical_file = "clinical_holdout.csv",
   selected_snps = selected_snps,
   covariates    = c("age", "sex", "batch", "PC1", "PC2", "PC3", "PC4", "PC5"),
   cohort_name   = "Hold-out set"
@@ -227,8 +228,8 @@ if (!is.null(res_holdout) && nrow(res_holdout) > 0) {
 ## ============================================================================
 
 res_poplar <- validate_cohort(
-  geno_file     = "source_data/geno_poplar.csv",
-  clinical_file = "source_data/clinical_poplar.csv",
+  geno_file     = "geno_poplar.csv",
+  clinical_file = "clinical_poplar.csv",
   selected_snps = selected_snps,
   covariates    = c("age", "sex", "PC1", "PC2", "PC3", "PC4", "PC5"),
   cohort_name   = "POPLAR"
